@@ -8,14 +8,23 @@ This project implements a robust **Multimodal Sensor Fusion System** that estima
 ### 1. Modeling Reality: Sensor Noise Simulation
 Individual sensors are rarely perfect. As shown below, the raw camera observations (red dots) contain significant Gaussian noise, deviating from the ideal green trajectory. This simulation reflects real-world challenges such as motion blur and environmental interference.
 
-![Sensor Noise Simulation](./sensor_noise.png)
+![Sensor Noise Simulation1](./sensor_noise.png)
+
+![Sensor Noise Simulation2](./sensor_noise_8.png)
+
+![Sensor Noise Simulation3](./sensor_noise_lissajous.png)
 
 ### 2. The Power of Fusion: EKF & Particle Filter
 The core of this project is the recovery of the "Ground Truth" from noisy inputs. 
 - **EKF (Blue dashed line)**: Provides a smooth, mathematically optimized path by linearizing the motion model.
 - **Particle Filter (Red dotted line)**: Demonstrates the ability to handle non-linearities and recover from initial uncertainty (as seen in the convergence phase at the center of the plot).
 
-![Sensor Fusion Result](./fusion_result.png)
+![Sensor Fusion Result1](./fusion_result.png)
+
+![Sensor Fusion Result2](./fusion_result_8.png)
+
+![Sensor Fusion Result3](./fusion_result_lissajous.png)
+
 
 ## 🚀 Technical Deep Dive
 
